@@ -27,5 +27,38 @@ window.Page5 = Page5;
 window.Page6 = Page6;
 window.Page7 = Page7;
 
+window.coverOption = () => {
+    const options = Array.from(document.body.getElementsByClassName('option'));
+    options.forEach(element => {
+        element.classList.add('done');
+        colorFigCaptions(element,"Browser");
+    });
+    return null;
+}
 
+const colorFigCaptions = (element,rightAnswer) => {
+    const figcaption = element.querySelector('figcaption');
+    if(figcaption.innerText === rightAnswer) {
+        figcaption.setAttribute('style','color:#adf802');
+    } else {
+        figcaption.setAttribute('style','color:#FF8CC6');
+    }
+    return null;
+}
 
+window.action = () => {
+    const innerText = document.getElementById('innerText');
+    innerText.innerText = "Surpresa!";
+    const textContent = document.getElementById('textContent');
+    textContent.textContent = "Será que matou a curiosidade?"
+    return null;
+}
+
+window.insertImage = (element) => {
+
+    const img = document.createElement('img');
+    img.setAttribute('src','./assets/images/joinha.gif');
+    element.parentNode.insertBefore(img,element);
+    element.onclick = "";
+    return null
+}

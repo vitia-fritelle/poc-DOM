@@ -1,5 +1,5 @@
 function ListItems(nodeList) {
-    const _listItems = nodeList?nodeList:[];
+    const _listItems = nodeList?Array.from(nodeList):[];
     let _activeItem = null;
     this.getListItems = () => _listItems;
     this.setActiveItem = (element) => _activeItem = element;

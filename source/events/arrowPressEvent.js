@@ -8,7 +8,7 @@ const moveRight = () => {
         listItems.setActiveItem(newActiveItem);
         listItems.getListItems().forEach(element => unpaintListItem(element));
         paintActiveItem();
-        newActiveItem.onclick;
+        newActiveItem.onclick();
     }
     return null;
 }
@@ -19,7 +19,7 @@ const moveLeft = () => {
         listItems.setActiveItem(newActiveItem);
         listItems.getListItems().forEach(element => unpaintListItem(element));
         paintActiveItem();
-        newActiveItem.onclick;
+        newActiveItem.onclick();
     }
     return null;
 }

@@ -1,0 +1,61 @@
+figure {
+    cursor: pointer;
+}
+
+main {
+    padding-top: 40px;
+}
+
+main * {
+    overflow-y: hidden;
+}
+
+main > .slide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: calc(100vh - 120px - 60px - 100px); 
+    padding: 20px 0;
+}
+
+main > .slide > p {
+    width: calc(100%*2/3);
+}
+
+main > .slide ul li {
+    margin: 20px 0;
+}
+
+main .quizz {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+main .quizz .done {
+    position: relative;
+}
+
+main .done:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.442);
+}
+
+main img {
+    height: 200px;
+}
+
+main .quizz img {
+    width: 200px;
+    height: 200px;
+}
+

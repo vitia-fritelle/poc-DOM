@@ -2,9 +2,14 @@
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 html *{
     background-color: #202124;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 a, a:visited {
@@ -15,7 +20,7 @@ a, a:visited {
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .centering-text {
